@@ -1,0 +1,132 @@
+/* --- SHOP / VITRINE --- */
+.shop-header {
+    padding: 40px 20px;
+    border-left: var(--border);
+    border-right: var(--border);
+}
+
+.shop-title {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Bento Grid */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 400px;
+    grid-auto-flow: dense;
+    border-top: var(--border);
+}
+
+.product-card {
+    border-right: var(--border);
+    border-bottom: var(--border);
+    position: relative;
+    overflow: hidden;
+    group: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Tamanhos Variados */
+.product-card--wide {
+    grid-column: span 2;
+}
+
+.product-card--tall {
+    grid-row: span 2;
+}
+
+.product-card--large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.product-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #ccc;
+    z-index: 2;
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover .product-info {
+    transform: translateY(0);
+}
+
+.overlay-btn {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 3;
+}
+
+.product-card:hover .overlay-btn { opacity: 1; }
+
+.p-name { font-weight: 700; font-size: 1.2rem; }
+.p-price { color: var(--accent); font-weight: 700; }
+
+/* Ajuste Responsivo */
+@media (max-width: 1200px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-card--large {
+        grid-row: span 1; 
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-title {
+        font-size: 2rem;
+    }
+    
+    .shop-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    
+    .product-card--wide,
+    .product-card--tall,
+    .product-card--large {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .product-card img {
+        height: 400px;
+    }
+
+    /* Mobile: Always show info */
+    .product-info {
+        transform: translateY(0);
+        position: relative;
+    }
+    
+    .overlay-btn {
+        display: none; /* Hide hover button on mobile */
+    }
+}

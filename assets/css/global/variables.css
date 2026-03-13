@@ -1,0 +1,8 @@
+:root {
+    --bg: #f4f4f4;
+    --black: #050505;
+    --accent: #ff3c00; /* Safety Orange */
+    --border: 2px solid var(--black);
+    --font-display: 'Archivo Black', sans-serif;
+    --font-tech: 'Space Mono', monospace;
+}

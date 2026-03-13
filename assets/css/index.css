@@ -1,0 +1,13 @@
+@import 'global/variables.css';
+@import 'global/reset.css';
+@import 'global/base.css';
+@import 'global/utilities.css';
+
+@import 'pages/partials/hero-section.css';
+@import 'pages/partials/about-section.css';
+@import 'pages/partials/services-section.css';
+@import 'pages/partials/contact-section.css';
+@import 'pages/partials/shop-section.css';
+@import 'pages/partials/featured-section.css';
+@import 'pages/partials/lookbook-section.css';
+@import 'pages/partials/cart.css';

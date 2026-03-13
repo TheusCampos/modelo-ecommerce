@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANDAL® | Streetwear Archive</title>
+    <meta name="description" content="Streetwear Archive - Concrete Jungle Survival. Equipamento utilitário para o caos urbano.">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicons/icon-192.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80&fm=webp" as="image">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        Frete Grátis acima de R$500 /// Envio Global
+    </div>
+
+    <header>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">MENU</button>
+        <a href="#" class="logo">VANDAL®</a>
+        <nav class="nav-links" id="nav-links">
+            <a href="#shop">Lançamento 01</a>
+            <a href="#shop">Coleção</a>
+            <a href="#about">Arquivo</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        <div class="cart-trigger" id="cart-trigger">
+            CARRINHO [<span id="cart-count">0</span>]
+        </div>
+    </header>
+
+    <!-- CART DRAWER -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <div class="cart-title">SEU CARRINHO</div>
+            <button class="cart-close" id="cart-close">✕</button>
+        </div>
+        
+        <div class="cart-items">
+            <!-- Item Exemplo -->
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1578681994506-b8f463449011?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" class="cart-item-img">
+                <div class="cart-item-details">
+                    <div class="cart-item-name">Moletom Oversized</div>
+                    <div class="cart-item-price">R$ 389,00</div>
+                    <div class="cart-item-remove">Remover</div>
+                </div>
+            </div>
+             <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1620799140408-ed5341cd2431?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" class="cart-item-img">
+                <div class="cart-item-details">
+                    <div class="cart-item-name">Meias Táticas (Pack 3)</div>
+                    <div class="cart-item-price">R$ 89,00</div>
+                    <div class="cart-item-remove">Remover</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>TOTAL</span>
+                <span>R$ 478,00</span>
+            </div>
+            <button class="cart-checkout-btn">FINALIZAR COMPRA</button>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-visual">
+            <div class="tag">Ref: Coleção_PV_2026</div>
+        </div>
+        <div class="hero-content">
+            <p>// Nova Coleção</p>
+            <h1>Sobrevivência<br>Selva de<br>Pedra</h1>
+            <p>Equipamento utilitário para o caos urbano. Tecidos técnicos e silhuetas oversized.</p>
+            <a href="#shop" class="btn">Comprar Lançamento</a>
+        </div>
+    </section>
+
+    <div class="marquee">
+        <div class="track">
+            <span>SEM REPOSIÇÃO</span>
+            <span class="filled">EDIÇÃO LIMITADA</span>
+            <span>SEM REPOSIÇÃO</span>
+            <span class="filled">EDIÇÃO LIMITADA</span>
+            <span>SEM REPOSIÇÃO</span>
+            <span class="filled">EDIÇÃO LIMITADA</span>
+            <span>SEM REPOSIÇÃO</span>
+            <span class="filled">EDIÇÃO LIMITADA</span>
+        </div>
+    </div>
+
+    <section id="shop">
+        <div class="container shop-header">
+            <h2 class="shop-title">Últimos Lançamentos</h2>
+        </div>
+        
+        <div class="shop-grid">
+            <!-- 1. Hoodie (Normal) -->
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1578681994506-b8f463449011?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80&fm=webp" alt="Moletom Oversized Preto" loading="lazy" width="700" height="700">
+                <div class="overlay-btn"><button class="btn add-to-cart">Adicionar +</button></div>
+                <div class="product-info">
+                    <div>
+                        <div class="p-name">Moletom Oversized</div>
+                        <small>Algodão Pesado / 500GSM</small>
+                    </div>
+                    <div class="p-price">R$ 389</div>
+                </div>
+            </article>
+
+            <!-- 2. Calça (Wide) -->
+            <article class="product-card product-card--wide">
+                <img src="https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80&fm=webp" alt="Calça Cargo V2 Preta" loading="lazy" width="1200" height="600">
+                <div class="overlay-btn"><button class="btn add-to-cart">Adicionar +</button></div>
+                <div class="product-info">
+                    <div>
+                        <div class="p-name">Calça Cargo V2</div>
+                        <small>Nylon Ripstop - Edição Especial</small>
+                    </div>
+                    <div class="p-price">R$ 420</div>
+                </div>
+            </article>
+
+            <!-- 3. Camiseta (Tall) -->
+            <article class="product-card product-card--tall">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80&fm=webp" alt="Camiseta Gráfica Rage" loading="lazy" width="700" height="1400">
+                <div class="overlay-btn"><button class="btn add-to-cart">Adicionar +</button></div>
+                <div class="product-info">
+                    <div>
+                        <div class="p-name">Camiseta Gráfica "RAGE"</div>
+                        <small>Lavagem Ácida</small>
+                    </div>
+                    <div class="p-price">R$ 180</div>
+                </div>
+            </article>
+
+            <!-- 4. Jaqueta (Large) -->
+            <article class="product-card product-card--large">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80&fm=webp" alt="Jaqueta Tática Techwear" loading="lazy" width="1200" height="1200">
+                <div class="overlay-btn"><button class="btn add-to-cart">Adicionar +</button></div>
+                <div class="product-info">
+                    <div>
+                        <div class="p-name">Jaqueta Tática</div>
+                        <small>Impermeável / Techwear</small>
+                    </div>
+                    <div class="p-price">R$ 650</div>
+                </div>
+            </article>
+
+            <!-- 5. Boné (Normal) -->
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80&fm=webp" alt="Boné 5-Panel Preto" loading="lazy" width="700" height="700">
+                <div class="overlay-btn"><button class="btn add-to-cart">Adicionar +</button></div>
+                <div class="product-info">
+                    <div>
+                        <div class="p-name">Boné 5-Panel</div>
+                        <small>Bordado 3D</small>
+                    </div>
+                    <div class="p-price">R$ 120</div>
+                </div>
+            </article>
+
+            <!-- 6. Bolsa (Normal) -->
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80&fm=webp" alt="Bolsa Crossbody Preta" loading="lazy" width="700" height="700">
+                <div class="overlay-btn"><button class="btn add-to-cart">Adicionar +</button></div>
+                <div class="product-info">
+                    <div>
+                        <div class="p-name">Bolsa Crossbody</div>
+                        <small>Cordura® Ballistic</small>
+                    </div>
+                    <div class="p-price">R$ 240</div>
+                </div>
+            </article>
+
+            <!-- 7. Meias (Wide) - Imagem Corrigida -->
+            <article class="product-card product-card--wide">
+                <img src="https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80&fm=webp" alt="Meias Táticas Pack" loading="lazy" width="1200" height="600">
+                <div class="overlay-btn"><button class="btn add-to-cart">Adicionar +</button></div>
+                <div class="product-info">
+                    <div>
+                        <div class="p-name">Meias Táticas</div>
+                        <small>Pack com 3</small>
+                    </div>
+                    <div class="p-price">R$ 89</div>
+                </div>
+            </article>
+
+            <!-- 8. Tênis (Tall) -->
+            <article class="product-card product-card--tall">
+                <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80&fm=webp" alt="Tênis Chunky Preto" loading="lazy" width="700" height="1400">
+                <div class="overlay-btn"><button class="btn add-to-cart">Adicionar +</button></div>
+                <div class="product-info">
+                    <div>
+                        <div class="p-name">Tênis Chunky V1</div>
+                        <small>Couro Sintético</small>
+                    </div>
+                    <div class="p-price">R$ 590</div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="featured-product">
+        <div class="fp-image">
+            <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+        </div>
+        <div class="fp-details">
+            <div class="fp-tag">// ITEM DA SEMANA</div>
+            <h1 class="fp-title">Bomber Jacket<br>Tactical Black</h1>
+            <p class="fp-description">
+                Jaqueta bomber re-construída com bolsos utilitários assimétricos. 
+                Tecido resistente à água. Zíperes YKK industriais. 
+                <br><br>
+                Modelagem boxy. Feito no Brasil.
+            </p>
+            
+            <div class="size-selector">
+                <div class="size-btn">S</div>
+                <div class="size-btn active">M</div>
+                <div class="size-btn">L</div>
+                <div class="size-btn">XL</div>
+            </div>
+
+            <div class="fp-price">R$ 890,00</div>
+            <button class="btn add-to-cart fp-btn">Adicionar à Sacola</button>
+        </div>
+    </section>
+
+    <section class="lookbook">
+        <div class="lb-item">
+            <div class="lb-text">Visão</div>
+            <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="lb-img">
+        </div>
+        <div class="lb-item">
+            <div class="lb-text">Caos</div>
+            <img src="https://images.unsplash.com/photo-1512353087810-25dfcd100962?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="lb-img">
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-visual">
+            <img src="https://images.unsplash.com/photo-1596727147705-56027c2d92ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sobre a Vandal">
+        </div>
+        <div class="about-content">
+            <div class="about-tag">// QUEM SOMOS</div>
+            <h2 class="about-title">ARQUIVO<br>VANDAL®</h2>
+            <p class="about-text">
+                Nascidos no concreto. Moldados pela urgência. A VANDAL® não é apenas uma marca de roupas, é um manifesto de resistência urbana.
+                <br><br>
+                Nosso design é funcional, brutalista e sem desculpas. Criamos equipamentos para quem vive a cidade em sua forma mais crua. Cada peça é numerada e produzida em lotes limitados.
+            </p>
+            
+            <div class="about-stats">
+                <div class="stat-item">
+                    <h3>2020</h3>
+                    <p>FUNDAÇÃO</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>DROPS LANÇADOS</p>
+                </div>
+                <div class="stat-item">
+                    <h3>BR</h3>
+                    <p>DESIGN / PRODUÇÃO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-info">
+            <h2 class="contact-title">Fale Conosco</h2>
+            <p>Dúvidas sobre pedidos, tamanhos ou parcerias? Entre em contato com nossa equipe.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h4>Atendimento</h4>
+                    <a href="mailto:sac@vandalmfg.com">sac@vandalmfg.com</a>
+                    <p>Seg - Sex: 9h às 18h</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Wholesale</h4>
+                    <a href="mailto:b2b@vandalmfg.com">b2b@vandalmfg.com</a>
+                    <p>Vendas para lojistas</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Imprensa</h4>
+                    <a href="mailto:press@vandalmfg.com">press@vandalmfg.com</a>
+                </div>
+                <div class="contact-item">
+                    <h4>Social</h4>
+                    <a href="#">@vandal_mfg</a>
+                </div>
+            </div>
+        </div>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label class="form-label">NOME</label>
+                <input type="text" class="form-input" placeholder="SEU NOME">
+            </div>
+            <div class="form-group">
+                <label class="form-label">E-MAIL</label>
+                <input type="email" class="form-input" placeholder="SEU E-MAIL">
+            </div>
+            <div class="form-group">
+                <label class="form-label">MENSAGEM</label>
+                <textarea class="form-textarea" placeholder="COMO PODEMOS AJUDAR?"></textarea>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">ENVIAR</button>
+        </form>
+    </section>
+
+    <footer>
+        <h2 class="footer-title">Junte-se ao Culto</h2>
+        <p class="footer-text">Receba acesso antecipado aos drops.</p>
+        
+        <form>
+            <input type="email" class="newsletter-input" placeholder="SEU E-MAIL">
+            <br>
+            <button type="submit" class="btn footer-btn">Inscrever</button>
+        </form>
+
+        <div class="footer-copyright">
+            &copy; 2026 Vandal Mfg. Todos os direitos reservados. <br>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="assets/js/index.js"></script>
+</body>
+</html>
